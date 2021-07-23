@@ -7,7 +7,39 @@
 ще один колір фону: #F5F4FA;
 
 */
+:root {
+    --primary-text-color : #212121;
+    --prymary-bg-color: #E5E5E5;
+    --accent-color: #2196F3;
+    --bg-additional-color: #F5F4FA;
+}
 body {
-    background-color: #E5E5E5;
-    color: #212121;
+    background-color: var(--prymary-bg-color);
+    color: var(--primary-text-color);
+}
+.list {
+    list-style: none;
+}
+.site-nav .link {
+    color: var(--primary-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus
+ {
+    color: var(--accent-color);
+}
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+.button {
+    color: var( --primary-text-color);
+    background-color: var(--bg-additional-color);
+}
+.button:hover {
+    color: var(--prymary-bg-color);
+    background-color: var(--accent-color);
+}
+.button.primary {
+    color: var(--prymary-bg-color);
+    background-color: var(--accent-color);
 }
