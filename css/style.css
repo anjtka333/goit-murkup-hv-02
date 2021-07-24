@@ -12,16 +12,36 @@
     --prymary-bg-color: #E5E5E5;
     --accent-color: #2196F3;
     --bg-additional-color: #F5F4FA;
+    --secondary-text-color:#ffffff;
+    --paragraf-color:#757575;
 }
 body {
     background-color: var(--prymary-bg-color);
     color: var(--primary-text-color);
+    font-family: roboto, sans-serif;
+    letter-spacing: 0.03em;
+}
+ /* Logo */
+.logo {
+        font-family: Raleway, sans-serif;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 1.2;
+        text-decoration: none;
+        color: var(--accent-color);
+       }
+.nav-logo-span {
+    color: var(--primary-text-color);
+}
+.footer-logo-span {
+    color: var(--secondary-text-color);
 }
 .list {
     list-style: none;
 }
 .site-nav .link {
     color: var(--primary-text-color);
+    text-decoration: none;
 }
 .site-nav .link:hover,
 .site-nav .link:focus
@@ -31,15 +51,87 @@ body {
 .site-nav .link.current {
     color: var(--accent-color);
 }
+
+/* Hero */
+.hero-title {
+font-family: Roboto;
+font-weight: 900;
+font-size: 44px;
+line-height: 0.73;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: var(--secondary-text-color);
+}
+
+/* Button*/
 .button {
     color: var( --primary-text-color);
     background-color: var(--bg-additional-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
 }
-.button:hover {
+.button:hover, .button:focus {
     color: var(--prymary-bg-color);
     background-color: var(--accent-color);
 }
 .button.primary {
     color: var(--prymary-bg-color);
     background-color: var(--accent-color);
+}
+.section-title {
+font-weight: 700;
+font-size: 36px;
+line-height: 0.86;
+text-align: center;
+}
+.list-title{
+font-weight: 700;
+font-size: 14px;
+line-height: 0.88;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+}
+.list-p {
+font-size: 14px;
+line-height: 0.58;
+color: var(--paragraf-color);
+}
+.card-title {
+font-weight: 500;
+font-size: 16px;
+line-height: 0.84;
+text-align: center;
+letter-spacing: 0.03em;
+}
+.card-p {
+font-size: 16px;
+line-height: 1.9;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--paragraf-color);
+}
+/* footer */
+.address-p {
+font-size: 14px;
+font-style: normal;
+line-height: 0.58;
+text-align: left;
+color: var(--secondary-text-color);
+}
+.address-a {
+font-size: 14px;
+font-style: normal;
+line-height: 0.58;
+text-align: left;
+color: rgba(255, 255, 255, 0.6);
+text-decoration: none;
+}
+.address-a:hover {
+    color: var(--accent-color);
 }
