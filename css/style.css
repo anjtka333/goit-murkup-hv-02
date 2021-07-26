@@ -14,13 +14,19 @@
     --bg-additional-color: #F5F4FA;
     --secondary-text-color:#ffffff;
     --paragraf-color:#757575;
+    --footer-bg-color:#2F303A;
+
 }
 body {
-    background-color: var(--prymary-bg-color);
     color: var(--primary-text-color);
     font-family: roboto, sans-serif;
     letter-spacing: 0.03em;
 }
+footer {
+    background: #2F303A;
+}
+
+
  /* Logo */
 .logo {
         font-family: Raleway, sans-serif;
@@ -42,6 +48,7 @@ body {
 .site-nav .link {
     color: var(--primary-text-color);
     text-decoration: none;
+    font-weight: 500;
 }
 .site-nav .link:hover,
 .site-nav .link:focus
@@ -57,7 +64,7 @@ body {
 font-family: Roboto;
 font-weight: 900;
 font-size: 44px;
-line-height: 0.73;
+line-height: 1.4;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
@@ -77,57 +84,63 @@ color: var(--secondary-text-color);
     cursor: pointer;
 }
 .button:hover, .button:focus {
-    color: var(--prymary-bg-color);
+    color: var(--secondary-text-color);
     background-color: var(--accent-color);
 }
 .button.primary {
     color: var(--prymary-bg-color);
     background-color: var(--accent-color);
 }
+.hero {
+    background: var(--footer-bg-color);
+}
 .section-title {
 font-weight: 700;
 font-size: 36px;
-line-height: 0.86;
+line-height: 1.16;
 text-align: center;
 }
 .list-title{
 font-weight: 700;
 font-size: 14px;
-line-height: 0.88;
+line-height: 1.1;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 }
 .list-p {
 font-size: 14px;
-line-height: 0.58;
+line-height: 1.7;
 color: var(--paragraf-color);
 }
 .card-title {
 font-weight: 500;
 font-size: 16px;
-line-height: 0.84;
+line-height: 1.2;
 text-align: center;
 letter-spacing: 0.03em;
 }
 .card-p {
 font-size: 16px;
-line-height: 1.9;
+line-height: 1.2;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--paragraf-color);
 }
 /* footer */
+.page-footer {
+    background: var(--footer-bg-color);
+}
 .address-p {
 font-size: 14px;
 font-style: normal;
-line-height: 0.58;
+line-height: 1.7;
 text-align: left;
 color: var(--secondary-text-color);
 }
 .address-a {
 font-size: 14px;
 font-style: normal;
-line-height: 0.58;
+line-height: 1.7;
 text-align: left;
 color: rgba(255, 255, 255, 0.6);
 text-decoration: none;
