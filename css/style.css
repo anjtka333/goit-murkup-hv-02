@@ -43,6 +43,8 @@ footer {
 }
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .site-nav .link {
   color: var(--primary-text-color);
